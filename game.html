@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class="main-container">
+    <div class="header-container">
+        <div class="header">
+
+            <div class="intro">Let's play a game of Rock, Paper, Scissors!</div>
+            <div class="rules">
+                Try your luck against computer. </br>
+                First one to win 3 rounds, wins the game! </br>
+                To start new round please click on one of three tools in the bottom.
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="rounds-played" id="roundsPlayed">
+            Rounds Counter
+        </div>
+        <div class="players-container">
+            <div class="player">
+                <div class="player-header">
+                    Your Choice
+                    Will be <br>
+                    Shown below.
+                </div>
+                <div class="player-img" id="playersChoice">
+                    <img src=questionMark.png alt="" class="picture"></img>  
+                </div>
+                <div class="player-won" id="playerWon">Player Won 0 rounds</div>     
+            </div>
+            <div class="round-info">
+                <div ><p id="pOutput"></p></div>
+            </div>
+            <div class="player">
+                <div class="player-header">
+                    Computer Choice
+                    Will be <br>
+                    Shown below.
+                </div>
+                <div class="player-img" id="computersChoice"> 
+                    <img src=questionMark.png alt="" class="picture"></img>
+                </div>
+                <div class="player-won" id="computerWon"> Computer Won 0 rounds</div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="Rock" onclick={displayRock()} >
+                <img src=rock.png alt="rock"/>
+            </button>
+            <button id="Rock" onclick={displayPaper()} >
+                <img src=paper.png alt="paper"/>
+            </button>
+            <button id="Rock" onclick={displayScissors()} >
+                <img src=scissors.png alt="scissors"/>
+            </button>
+        </div>
+        
+    </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <p>This page was created by Maksim Minenko @2022</p>
+    </div>
+</footer>
+</html>
